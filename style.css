@@ -1,0 +1,17 @@
+html{
+	font-size: 13px;
+}
+#header{
+	display: block;
+	max-width: 680px;
+	color: #245878;
+	padding: 10px;
+	position: relative;
+}
+
+body{
+	font-family: "",sans-serif;
+	background-color: #245878 ;
+}
+
+
