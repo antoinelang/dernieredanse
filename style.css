@@ -1,17 +1,137 @@
 html{
 	font-size: 13px;
 }
-#header{
+
+body{
+	font-family: "FranklinGothic LT No.2",sans-serif;
+	color:white;
+	background-color: #245878 ;
+	margin: 0;
+}
+
+
+#titres{
 	display: block;
+	width: 300px;
 	max-width: 680px;
-	color: #245878;
+	color: #FFFFFF;
+	margin-top: -30px;
+	position: fixed;
+	z-index: 3;
+}
+
+
+#informations{
+	margin-left: 500px;
+	margin-top: 30px;
+	font-size: 11px;
+}
+
+h1{
 	padding: 10px;
+	margin-right: 50px;
+    box-sizing:border-box;
+    background-color: #F15132;
+}
+
+h4{
+	padding: 10px;
+	margin-right: 50px;
+	box-sizing:border-box;
+    background-color: #F15132;
+	margin-top: -38px;
+}
+
+#legende{
+	margin-top: -60px;
+	margin-left: 900px;
+	line-height: 5px;
+}
+
+#menu{
+	background: #245878;
+	text-decoration: ;
+	font-weight: bold;
+	position: fixed;
+	color: #FFFFFF;
+	padding-top:65px;
+	padding-right: 10px;
+	font-size: 13px;
+	line-height: 19px;
+	z-index: 2;
+	height: 100%;
+	margin-left: -12px;
+}
+
+#gallerie{
+	position: fixed;
+	top:100px;
+	/*width: calc(100% - 300px);*/
+	width:100%;
+	height: 100%;
+	/*left:300px;*/
+	overflow: auto;
+	z-index: 1;
+}
+
+.container{
+	padding-left:300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 400px;
+	align-items:baseline;
+	align-content:flex-start;
+}
+h2{
+	padding: 10px;
+	margin-right: 50px;
+	background-color: #F15132;
+	height: 40px;
+    box-sizing: border-box;
+
+
+}
+
+.thematique{
+	width:800px;
+}
+
+.thematique .onglet{
 	position: relative;
 }
 
-body{
-	font-family: "",sans-serif;
-	background-color: #245878 ;
+.thematique .onglet h2{
+	margin-top: 10px;
+	color:#FFFFFF;
 }
+
+.thematique .onglet .legende{
+	position: absolute;
+	width: 400px;
+	z-index:2;
+	top:4em;
+	left:0;
+	background-color: #F15132;
+	padding: 15px;
+
+}
+
+.thematique .onglet .images{
+	width:500px;
+	margin-right: 50px;
+	top:10px;
+	left:10px;
+	position: relative;
+	margin-top: 10px;
+}
+
+.thematique .onglet .images img{
+	display: inline-block;
+	max-width: 400px;
+	height: auto;
+	float: left;
+}
+
 
 
