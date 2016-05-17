@@ -3,7 +3,8 @@ html{
 }
 
 body{
-	font-family: "FranklinGothic LT No.2",sans-serif;
+  	font-family: "franklin-gothic-urw",sans-serif;
+  	font-weight: 500;
 	color:white;
 	background-color: #245878 ;
 	margin: 0;
@@ -40,8 +41,9 @@ h4{
 }
 
 #legende{
+	top:10px;
 	position: fixed;
-	left: 900px;
+	left: 870px;
 }
 
 #legende p{
