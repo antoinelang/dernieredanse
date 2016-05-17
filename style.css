@@ -11,41 +11,41 @@ body{
 
 
 #titres{
+	padding: 10px;
+	top:5px;
 	display: block;
-	width: 300px;
-	max-width: 680px;
+	width: 240px;
 	color: #FFFFFF;
-	margin-top: -30px;
 	position: fixed;
 	z-index: 3;
+	background-color: #F15132;
+
 }
 
 
 #informations{
-	margin-left: 500px;
-	margin-top: 30px;
+	position: fixed;
+	left: 500px;
 	font-size: 11px;
 }
 
 h1{
-	padding: 10px;
-	margin-right: 50px;
-    box-sizing:border-box;
-    background-color: #F15132;
+	margin:0px;
 }
 
 h4{
-	padding: 10px;
-	margin-right: 50px;
-	box-sizing:border-box;
-    background-color: #F15132;
-	margin-top: -38px;
+	margin:0px;
+
+	;
 }
 
 #legende{
-	margin-top: -60px;
-	margin-left: 900px;
-	line-height: 5px;
+	position: fixed;
+	left: 900px;
+}
+
+#legende p{
+	margin:0px;	
 }
 
 #menu{
@@ -54,8 +54,8 @@ h4{
 	font-weight: bold;
 	position: fixed;
 	color: #FFFFFF;
-	padding-top:65px;
-	padding-right: 10px;
+	top:145px;
+	padding: 10px;
 	font-size: 13px;
 	line-height: 19px;
 	z-index: 2;
