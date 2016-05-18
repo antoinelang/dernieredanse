@@ -57,6 +57,7 @@ h4{
 }
 
 #menu{
+	height: 1000px;
 	background: #245878;
 	text-decoration: ;
 	font-weight: bold;
@@ -92,7 +93,7 @@ a{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	height: 400px;
+	height: 900px;
 	align-items:baseline;
 	align-content:flex-start;
 }
@@ -131,11 +132,10 @@ h2{
 }
 
 table,td {
-	 border:solid 1px #000;
-	 margin:px;
 }
 
 td{
+	border:solid 5px #245878;
 	vertical-align : top;
 }
 
