@@ -11,6 +11,13 @@ body{
 }
 
 
+#bandeau{
+	top: -8px;
+	position: fixed;
+	width: 5000px;
+	background-color:#F76840;
+}
+
 #titres{
 	padding: 10px;
 	top:10px;
@@ -19,65 +26,72 @@ body{
 	color: #FFFFFF;
 	position: fixed;
 	z-index: 3;
-	background-color: #F15132;
-
-
 }
+
 
 
 #informations{
 	position: fixed;
-	top:10px;
-	left: 500px;
+	top:23px;
+	left: 305px;
 	font-size: 11px;
 }
 
 h1{
-	margin:0px;
+	margin:4px;
 }
 
 h4{
-	margin:0px;
-	line-height: 13px;
+	margin:4px;
+	line-height: 14px;
 
 	;
 }
 
 #legende{
-	top:10px;
+	top:2px;
 	position: fixed;
 	width: 300px;
 	left: 870px;
 	font-size: 12px;
 	height: 70px;
+	z-index: 8;
 }
 
-#legende p{
-	margin:0px;	
+#titre{
+	font-style: italic;
 }
+
+ul {
+list-style-type: none;
+}
+
+
 
 #menu{
-	height: 1000px;
 	background: #245878;
 	text-decoration: ;
 	font-weight: bold;
 	position: fixed;
 	color: #FFFFFF;
-	top:145px;
+	top:185px;
+	height: 2000px;
 	padding: 10px;
 	font-size: 13px;
 	line-height: 19px;
 	z-index: 2;
-	margin-left: -12px;$
+	margin-left: -31px;
+}
+
+.present{
+	margin-left: 40px;
 }
 
 #gallerie{
 	position: fixed;
-	top:100px;
-	/*width: calc(100% - 300px);*/
+	top:135px;
 	width:100%;
 	height: 100%;
-	/*left:300px;*/
 	overflow: auto;
 	z-index: 1;
 }
@@ -93,14 +107,14 @@ a{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	height: 900px;
+	height: 1200px;
 	align-items:baseline;
 	align-content:flex-start;
 }
+
 h2{
 	padding: 10px;
 	margin-right: 50px;
-	background-color: #F15132;
 	height: 40px;
     box-sizing: border-box;
 
@@ -117,6 +131,7 @@ h2{
 
 .thematique .onglet h2{
 	margin-top: 10px;
+
 	color:#FFFFFF;
 }
 
@@ -126,8 +141,9 @@ h2{
 	z-index:2;
 	top:4em;
 	left:0;
-	background-color: #F15132;
+	background-color: #245878;
 	padding: 15px;
+	top: 48px;
 
 }
 
@@ -136,7 +152,7 @@ table,td {
 
 td{
 	border:solid 5px #245878;
-	vertical-align : top;
+	vertical-align :top;
 }
 
 .thematique .onglet .images{
