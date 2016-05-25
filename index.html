@@ -29,16 +29,16 @@
 
 	<div id="menu">
 		<div class="present">	
-			Présentation<br>
-			Crédits
+			<a href="#Presentation">Présentation</a><br>
+			<a href="#Credits">Crédits</a>
 		</div>
 		<ul>
-			<li>Holbein et la postérité</li>
-			<li>Strasbourg et l’illustration macabre</li>
-			<li>La Mort dans les Fables de La Fontaine</li>
-			<li>La Jeune Fille et la Mort</li>
-			<li>Au détour du chemin</li>
-			<li>Derniers instants</li>
+			<li><a href="#Holbein">Holbein et la postérité</a></li>
+			<li><a href="#Strasbourg">Strasbourg et l’illustration macabre</a></li>
+			<li><a href="#LaFontaine">La Mort dans les Fables de La Fontaine</a></li>
+			<li><a href="#JeuneFilleMort">La Jeune Fille et la Mort</a></li>
+			<li><a href="#chemin">Au détour du chemin</a></li>
+			<li><a href="#DerniersInstants">Derniers instants</a></li>
 			<li>La danse des morts</li>
 			<li>Parodies et détournements</li>
 			<li>Le fantastique</li>
@@ -52,7 +52,7 @@
 
 	<div id="gallerie">
 		<div class="container">
-			<div class="thematique">
+			<div class="thematique" id="Presentation">
 				<div class="onglet">
 					<h2>Présentation</h2>
 					<div class="legende">
@@ -68,7 +68,7 @@
 
 				</div>
 			</div>
-			<div class="thematique">
+			<div class="thematique" id="Holbein">
 				<div class="onglet">
 					<h2>Holbein et la postérité</h2>
 					<div class="legende">
@@ -88,7 +88,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="thematique">
+			<div class="thematique" id="Strasbourg">
 				<div class="onglet">
 					<h2>Strasbourg et l’illustration macabre</h2>
 					<div class="legende">
@@ -107,7 +107,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="thematique">
+			<div class="thematique" id="LaFontaine">
 				<div class="onglet">
 					<h2>La Mort dans les <i>Fables</i> de La Fontaine</h2>
 					<div class="legende">
@@ -127,7 +127,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="thematique">
+			<div class="thematique" id="#JeuneFilleMort">
 				<div class="onglet">
 					<h2>La Jeune Fille et la Mort</h2>
 					<div class="legende">
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="thematique">
+			<div class="thematique" id="chemin">
 				<div class="onglet">
 					<h2>Au détour du chemin</h2>
 					<div class="legende">
@@ -163,7 +163,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="thematique">
+			<div class="thematique" id="DerniersInstants">
 				<div class="onglet">
 					<h2>Derniers instants</h2>
 					<div class="legende">
@@ -329,7 +329,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="thematique">
+			<div class="thematique" id="Credits">
 				<div class="onglet">
 					<h2>Crédits</h2>
 					<div class="legende">
@@ -368,6 +368,8 @@
 	</div>
 	
 	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery.localScroll.min.js"></script>
 	<script>
 
 		$(document).ready(function(){
@@ -381,8 +383,12 @@
 			})
 
 			$(".legende").hide();
-			var bouton=$("<a href='#'>+</a>");
-			$(".onglet h2").prepend(bouton);
+
+			$(".onglet h2").each(function(){
+				var bouton = "<a href='#'>+ " + $(this).text() +"</a>";
+				$(this).html(bouton);
+			})
+
 			$(".onglet h2 a").click(function(e){
 				e.preventDefault();	
 
@@ -391,10 +397,27 @@
 				$(this).parent().parent().find(".legende").toggleClass('active');
 
 				$(this).parent().parent().find(".legende").toggle();	
-			})		
-			
+			})
 
 
+			$.localScroll.defaults.axis = 'x';
+
+			$.localScroll({
+				target: '#gallerie', // could be a selector or a jQuery object too.
+				queue:true,
+				duration:1000,
+				hash:true,
+				offset: {top:0, left:-290},
+				onBefore:function( e, anchor, $target ){
+					// The 'this' is the settings object, can be modified
+				},
+				onAfter:function( anchor, settings ){
+					// The 'this' contains the scrolled element (#content)
+				}
+			});
+
+
+	
 		});
 
 	</script>

@@ -74,9 +74,9 @@ list-style-type: none;
 	font-weight: bold;
 	position: fixed;
 	color: #FFFFFF;
-	top:185px;
+	top:100px;
 	height: 2000px;
-	padding: 10px;
+	padding: 95px 10px 10px;
 	font-size: 13px;
 	line-height: 19px;
 	z-index: 2;
@@ -110,6 +110,7 @@ a{
 	height: 1200px;
 	align-items:baseline;
 	align-content:flex-start;
+	width: 8400px;
 }
 
 h2{
@@ -150,6 +151,11 @@ table,td {
 td{
 	border:solid 5px #245878;
 	vertical-align :top;
+	height: 375px;
+}
+
+tr:first-child>td{
+	vertical-align :bottom;
 }
 
 .thematique .onglet .images{
@@ -167,6 +173,4 @@ td{
 	height: auto;
 	float: left;
 }
-
-
 
