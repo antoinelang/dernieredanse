@@ -4,10 +4,12 @@ html{
 
 body{
   	font-family: "franklin-gothic-urw",sans-serif;
-  	font-weight: 500;
+	font-weight: normal;
 	color:white;
 	background-color: #245878 ;
 	margin: 0;
+	overflow:hidden;
+	overflow-x:scroll;
 }
 
 
@@ -16,6 +18,7 @@ body{
 	position: fixed;
 	width: 5000px;
 	background-color:#F76840;
+	z-index: 1;
 }
 
 #titres{
@@ -28,7 +31,12 @@ body{
 	z-index: 3;
 }
 
-
+#logos{
+	top:30px;
+	position: fixed;
+	left: 500px; 
+	z-index: 2;
+}
 
 #informations{
 	position: fixed;
@@ -44,17 +52,16 @@ h1{
 h4{
 	margin:4px;
 	line-height: 14px;
-
-	;
 }
 
 #legende{
-	top:2px;
+	background:#245878; 
+	padding: 9px;
+	top: 500px;
 	position: fixed;
 	width: 300px;
 	left: 870px;
 	font-size: 12px;
-	height: 70px;
 	z-index: 8;
 }
 
@@ -63,14 +70,14 @@ h4{
 }
 
 ul {
-list-style-type: none;
+	list-style-type: none;
 }
+
 
 
 
 #menu{
 	background: #245878;
-	text-decoration: ;
 	font-weight: bold;
 	position: fixed;
 	color: #FFFFFF;
@@ -132,7 +139,6 @@ h2{
 
 .thematique .onglet h2{
 	margin-top: 10px;
-
 	color:#FFFFFF;
 }
 
@@ -146,6 +152,7 @@ h2{
 	padding: 15px;
 	top: 66px;
 }
+
 
 table,td {
 }
@@ -161,7 +168,7 @@ tr:first-child>td{
 }
 
 .thematique .onglet .images{
-	width:500px;
+	width:900px;
 	margin-right: 50px;
 	top:10px;
 	left:10px;
@@ -171,7 +178,7 @@ tr:first-child>td{
 
 .thematique .onglet .images img{
 	display: inline-block;
-	max-width: 250px;
+	max-width: 450px;
 	height: auto;
 	float: left;
 }
