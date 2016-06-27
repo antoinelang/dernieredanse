@@ -69,6 +69,7 @@ h4{
 	font-style: italic;
 }
 
+
 ul {
 	list-style-type: none;
 }
@@ -130,7 +131,11 @@ h2{
 }
 
 .thematique{
-	width:800px;
+	width:1000px;
+}
+
+em {
+    font-style: italic;
 }
 
 .thematique .onglet{
@@ -148,6 +153,7 @@ h2{
 	z-index:2;
 	top:4em;
 	left:0;
+	line-height: 16px;
 	background-color: #245878;
 	padding: 15px;
 	top: 66px;
